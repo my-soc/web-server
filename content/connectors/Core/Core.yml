@@ -1,0 +1,40 @@
+category: Core
+id: CoreCommands
+name: Core Commands
+display: Core Commands
+version: -1
+description: Core Commands
+image:
+parameters:
+connector:
+  commands:
+  - name: Print
+    deprecated: false
+    description: Print Something
+    execution: false
+    outputs:
+    - contextPath: Core.Prints
+      description: Prints
+      type: String
+  code: |-
+    import lib.mock as wave
+
+    '''
+    Commands
+    '''
+
+    def core_print(print_input: str):
+        return print_input
+
+
+    def main():
+        try:
+            if wave.command() == 'print':
+                result = core_print(wave.args())
+                wave.results(result)
+        except Exception as e:
+            wave.error(str(f'Failed to execute {wave.command()} command. Error: {str(e)}'))
+
+
+    if __name__ in ('__main__', '__builtin__', 'builtins'):
+        main()

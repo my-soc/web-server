@@ -1,0 +1,458 @@
+[
+   {
+      "id": "Alpaca",
+      "name": "Alpaca",
+      "display": "Alpaca",
+      "category": "Data Enrichment & Threat Intelligence",
+      "description": "An Integration to Query Stock Information",
+      "detailedDescription": "## Hello World\n- This text is markdown\n- Here you should explain how to configure the instance in Demisto",
+      "isFetch": true,
+      "commands": [
+         {
+            "name": "alpaca-get-account-information",
+            "deprecated": false,
+            "arguments": null,
+            "outputs": [
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Account",
+                  "description": "Alpaca Acount Information",
+                  "type": "String"
+               }
+            ],
+            "important": null,
+            "description": "Get Alpaca Account Information",
+            "execution": false,
+            "cartesian": false,
+            "hidden": false,
+            "sensitive": false,
+            "timeout": 0,
+            "permitted": false,
+            "indicatorAction": false
+         },
+         {
+            "name": "alpaca-get-last-trade",
+            "deprecated": false,
+            "arguments": [
+               {
+                  "name": "ticker",
+                  "required": true,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "Stock Ticker"
+               }
+            ],
+            "outputs": [
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastTrade.Ticker",
+                  "description": "Stock Last Trade Ticker",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastTrade.Price",
+                  "description": "Stock Last Trade Price",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastTrade.TimeStamp",
+                  "description": "Stock Last Trade TimeStamp",
+                  "type": "Unknown"
+               }
+            ],
+            "important": null,
+            "description": "Get Stock Last Trade Information",
+            "execution": false,
+            "cartesian": false,
+            "hidden": false,
+            "sensitive": false,
+            "timeout": 0,
+            "permitted": false,
+            "indicatorAction": false
+         },
+         {
+            "name": "alpaca-get-candlesticks",
+            "deprecated": false,
+            "arguments": [
+               {
+                  "name": "timeframe",
+                  "required": true,
+                  "deprecated": false,
+                  "default": true,
+                  "secret": false,
+                  "auto": "PREDEFINED",
+                  "predefined": [
+                     "1Min",
+                     "5Min",
+                     "15Min",
+                     "1D"
+                  ],
+                  "description": "Price Timeframes: 1Min, 5Min, 15Min or 1D",
+                  "defaultValue": "1D"
+               },
+               {
+                  "name": "ticker",
+                  "required": true,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "Stock Ticker"
+               },
+               {
+                  "name": "limit",
+                  "required": false,
+                  "deprecated": false,
+                  "default": true,
+                  "secret": false,
+                  "description": "The maximum number of candlesticks to be returned. It can be between 1 and 1000",
+                  "defaultValue": "100"
+               },
+               {
+                  "name": "start",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "Filter bars equal to or after this time, cannot be used with \"after\". ex: '2019-04-15T09:30:00-04:00'"
+               },
+               {
+                  "name": "end",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "Filter bars equal to or before this time, cannot be used with \"until\". ex: '2019-04-15T09:30:00-04:00'"
+               },
+               {
+                  "name": "after",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "predefined": [
+                     ""
+                  ],
+                  "description": "Filter bars after this time, cannot be used with \"start\". ex: '2019-04-15T09:30:00-04:00'"
+               },
+               {
+                  "name": "until",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "Filter bars before this time, cannot be used with \"end\". ex: '2019-04-15T09:30:00-04:00'"
+               }
+            ],
+            "outputs": [
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.CandleSticks.Time",
+                  "description": "Price Candle Stick Time",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.CandleSticks.Open",
+                  "description": "Price Candle Stick Open",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.CandleSticks.High",
+                  "description": "Price Candle Stick High",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.CandleSticks.Low",
+                  "description": "Price Candle Stick Low",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.CandleSticks.Close",
+                  "description": "Price Candle Stick Close",
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.CandleSticks.Volume",
+                  "description": "Price Candle Stick Volume",
+                  "type": "Unknown"
+               }
+            ],
+            "important": null,
+            "description": "Get Stock Price Candlestick Information",
+            "execution": false,
+            "cartesian": false,
+            "hidden": false,
+            "sensitive": false,
+            "timeout": 0,
+            "permitted": false,
+            "indicatorAction": false
+         },
+         {
+            "name": "alpaca-get-last-quote",
+            "deprecated": false,
+            "arguments": [
+               {
+                  "name": "ticker",
+                  "required": true,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "Stock Ticker"
+               }
+            ],
+            "outputs": [
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.Ticker",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.AskPrice",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.AskSize",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.AskExchange",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.BidPrice",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.BidSize",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.BideExchange",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpha.Stock.LastQuote.TimeStamp",
+                  "description": null,
+                  "type": "Unknown"
+               }
+            ],
+            "important": null,
+            "description": "Get Stock Last Quote",
+            "execution": false,
+            "cartesian": false,
+            "hidden": false,
+            "sensitive": false,
+            "timeout": 0,
+            "permitted": false,
+            "indicatorAction": false
+         },
+         {
+            "name": "alpaca-get-orders",
+            "deprecated": false,
+            "arguments": [
+               {
+                  "name": "status",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "auto": "PREDEFINED",
+                  "predefined": [
+                     "open",
+                     "closed",
+                     "all"
+                  ],
+                  "description": "Order status to be queried. open, closed or all. Defaults to open."
+               },
+               {
+                  "name": "limit",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "predefined": [
+                     ""
+                  ],
+                  "description": "The maximum number of orders in response. Defaults to 50 and max is 500."
+               },
+               {
+                  "name": "until",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "The response will include only ones submitted until this timestamp (exclusive.)"
+               },
+               {
+                  "name": "after",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "description": "The response will include only ones submitted after this timestamp (exclusive.)"
+               },
+               {
+                  "name": "direction",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "auto": "PREDEFINED",
+                  "predefined": [
+                     "asc",
+                     "desc"
+                  ],
+                  "description": "The chronological order of response based on the submission time. asc or desc. Defaults to desc."
+               },
+               {
+                  "name": "nested",
+                  "required": false,
+                  "deprecated": false,
+                  "default": false,
+                  "secret": false,
+                  "auto": "PREDEFINED",
+                  "predefined": [
+                     "true",
+                     "false"
+                  ],
+                  "description": "If true, the result will roll up multi-leg orders under the legs field of primary order."
+               }
+            ],
+            "outputs": [
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.OrderID",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.SubmitedAt",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.CreatedAt",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.UpdatedAt",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.FilledAt",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.Ticker",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.Quantity",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.FilledQuantity",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.Type",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.Side",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.TimeInForce",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.LimitPrice",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.StopPrice",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.FilledAVGPrice",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.Status",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.ExtendedHours",
+                  "description": null,
+                  "type": "Unknown"
+               },
+               {
+                  "contentPath": "",
+                  "contextPath": "Alpaca.Orders.Legs",
+                  "description": null,
+                  "type": "Unknown"
+               }
+            ],
+            "important": null,
+            "description": "Retrieves a list of orders for the account, filtered by the supplied query parameters.",
+            "execution": false,
+            "cartesian": false,
+            "hidden": false,
+            "sensitive": false,
+            "timeout": 0,
+            "permitted": false,
+            "indicatorAction": false
+         }
+      ]
+   }
+]

@@ -1,0 +1,456 @@
+category: Trading Platforms
+id: IBD
+name: IBD
+display: IBD Integration
+version: -1
+description: An Integration to Query Stock Information
+image: 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
+parameters:
+- name: url
+  display: URL
+  required: true
+  type: string
+  hidden: false
+- name: apiID
+  display: API ID
+  required: true
+  type: string
+  hidden: false
+- name: apiSecret
+  display: API Secret
+  required: false
+  type: string
+  hidden: false
+- name: insecure
+  display: Validate SSL
+  required: false
+  type: boolean
+  hidden: false
+- name: proxy
+  display: Use Proxy
+  required: false
+  type: boolean
+  hidden: false
+connector:
+  commands:
+  - name: ibd-get-account-information
+    deprecated: false
+    description: Get Alpaca Account Information
+    execution: false
+    outputs:
+    - contextPath: Alpaca.Account
+      description: Alpaca Acount Information
+      type: String
+  code: |-
+    import urllib3
+
+    from lib.common import BaseClient
+    import lib.mock as wave
+
+
+    # Disable insecure warnings
+    urllib3.disable_warnings()
+
+
+    ''' CONSTANTS '''
+
+
+    CONNECTOR_NAME = 'Alpaca'
+
+
+    '''
+    Classes
+    '''
+
+
+    class Client(BaseClient):
+
+        def __init__(self, api_id: str, api_secret: str, base_url: str, verify=False, proxy=False,
+                     ok_codes=(200, 201, 204), headers=None, auth=None):
+            super(Client, self).__init__(base_url, verify, proxy, ok_codes, headers, auth)
+            self.api_id = api_id
+            self.api_secret = api_secret
+            self.headers = {
+                "APCA-API-KEY-ID": api_id,
+                "APCA-API-SECRET-KEY": api_id
+            }
+
+
+        def get_clock(self):
+            wave.info('Getting Clock Value')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/clock',
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_account_information(self):
+            wave.info('Getting Account Information')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/account',
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_last_trade(self,ticker):
+            wave.info('Getting Last Trade Information')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v1/last/stocks/'+ticker,
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_candlesticks(self, ticker, timeframe="1D", limit="100", start=None, end=None, after=None, until=None):
+            wave.info('Getting Price Candlesticks')
+            params = {
+                "symbols": ticker,
+                "limit": limit
+            }
+            if start is not None and after is not None:
+                wave.error("Start and After filters cannot be used in one query")
+            if until is not None and end is not None:
+                wave.error("Until and End filters cannot be used in one query")
+
+            if start is not None:
+                params['start'] = start
+            if end is not None:
+                params['end'] = end
+            if after is not None:
+                params['after'] = after
+            if until is not None:
+                params['until'] = until
+
+            res = self._http_request(
+                "GET",
+                url_suffix=f'/v1/bars/{timeframe}',
+                resp_type="json",
+                headers=self.headers,
+                params=params
+            )
+            return res
+
+        def get_last_quote(self, ticker):
+            wave.info('Getting Last Quote Information')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v1/last_quote/stocks/'+ticker,
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_orders(self, status=None, limit=None, until=None, after=None, direction=None, nested=None):
+            wave.info('Getting Orders Information')
+            params = {}
+
+            if status is not None:
+                params['status'] = status
+            if limit is not None:
+                params['limit'] = limit
+            if until is not None:
+                params['until'] = until
+            if after is not None:
+                params['after'] = after
+            if direction is not None:
+                params['direction'] = direction
+            if nested is not None:
+                params['nested'] = nested
+
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/orders',
+                resp_type="json",
+                headers=self.headers,
+                params=params
+            )
+            return res
+
+        def submit_order(self, status=None, limit=None, until=None, after=None, direction=None, nested=None):
+            wave.info('Getting Orders Information')
+            params = {}
+
+            if status is not None:
+                params['status'] = status
+            if limit is not None:
+                params['limit'] = limit
+            if until is not None:
+                params['until'] = until
+            if after is not None:
+                params['after'] = after
+            if direction is not None:
+                params['direction'] = direction
+            if nested is not None:
+                params['nested'] = nested
+
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/orders',
+                resp_type="json",
+                headers=self.headers,
+                params=params
+            )
+            return res
+
+
+    '''
+    Commands
+    '''
+
+
+    def test_connector(client):
+        res = client.get_clock()
+        if res['is_open'] == 'true' or 'false':
+            return 'ok'
+        else:
+            return 'Failed to connect to the API'
+
+
+    def get_account_info(client):
+        raw_response = client.get_account_information()
+
+        if raw_response:
+            raws = alpaca_ec = raw_response
+        else:
+            return f'{CONNECTOR_NAME} - Could not find any Accounts'
+
+        context_entry = {
+            "Alpaca.Account": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_last_trade(client, args):
+        raw_response = client.get_last_trade(args['ticker'])
+        if raw_response:
+            raws = raw_response
+            alpaca_ec ={
+                "Ticker": raw_response['symbol'],
+                "Price": raw_response['last']['price'],
+                "Size": raw_response['last']['size'],
+                "Exchange": raw_response['last']['exchange'],
+                "TimeStamp": raw_response['last']['timestamp']
+            }
+        else:
+            return f'{CONNECTOR_NAME} - Could not Get The Last Trade Information'
+
+        context_entry = {
+            "Alpaca.Stock.LastTrade(val.Ticker && val.Ticker == obj.Ticker)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_candlesticks(client, args):
+        raws=[]
+        alpaca_ec=[]
+        title = f'{CONNECTOR_NAME} - Price Candlesticks'
+        raw_response = client.get_candlesticks(timeframe=args.get('timeframe'), ticker=args.get('ticker'), limit=args.get('limit'),
+                                               start=args.get('start'), end=args.get('end'), after=args.get('after'),
+                                               until=args.get('until'))
+        if raw_response:
+            for candle in raw_response[args.get('ticker')]:
+                raws.append(candle)
+                alpaca_ec.append({
+                    "Time": candle['t'],
+                    "Open": candle['o'],
+                    "High": candle['h'],
+                    "Low": candle['l'],
+                    "Close": candle['c'],
+                    "Volume": candle['v']
+                })
+        else:
+            return f'{CONNECTOR_NAME} - Could not Get The CandleSticks'
+
+        context_entry = {
+            "Alpaca.Stock.CandleSticks": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_last_quote(client, args):
+        raw_response = client.get_last_quote(args['ticker'])
+        if raw_response:
+            raws = raw_response
+            alpaca_ec ={
+                "Ticker": raw_response['symbol'],
+                "AskPrice": raw_response['last']['askprice'],
+                "AskSize": raw_response['last']['asksize'],
+                "AskExchange": raw_response['last']['askexchange'],
+                "BidPrice": raw_response['last']['bidprice'],
+                "BidSize": raw_response['last']['bidsize'],
+                "BidExchange": raw_response['last']['bidexchange'],
+                "TimeStamp": raw_response['last']['timestamp']
+            }
+        else:
+            return f'{CONNECTOR_NAME} - Could not Get The Last Quote Information'
+
+        context_entry = {
+            "Alpaca.Stock.LastQuote(val.Ticker && val.Ticker == obj.Ticker)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_orders(client, args):
+        raws=[]
+        alpaca_ec=[]
+        raw_response = client.get_orders(status=args.get('status'), limit=args.get('limit'), until=args.get('until'),
+                                         after=args.get('after'), direction=args.get('direction'), nested=args.get('nested'))
+        if raw_response:
+            for order in raw_response:
+                raws.append(order)
+                alpaca_ec.append({
+                    "OrderID": order.get('id'),
+                    "SubmitedAt": order.get('submitted_at'),
+                    "CreatedAt": order.get('created_at'),
+                    "UpdatedAt": order.get('updated_at'),
+                    "FilledAt": order.get('filled_at'),
+                    "Ticker": order.get('symbol'),
+                    "Quantity": order.get('qty'),
+                    "FilledQuantity": order.get('filled_qty'),
+                    "Type": order.get('type'),
+                    "Side": order.get('side'),
+                    "TimeInForce": order.get('time_in_force'),
+                    "LimitPrice": order.get('limit_price'),
+                    "StopPrice": order.get('stop_price'),
+                    "FilledAVGPrice": order.get('filled_avg_price'),
+                    "Status": order.get('status'),
+                    "ExtendedHours": order.get('extended_hours'),
+                    "Legs": order.get('legs')
+                })
+        else:
+            return (f'{CONNECTOR_NAME} - No Orders Found',{},{})
+
+        context_entry = {
+            "Alpaca.Orders(val.OrderID && val.OrderID == obj.OrderID)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def submit_order(client, args):
+        raws=[]
+        alpaca_ec=[]
+        raw_response = client.submit_order(ticker=args.get('ticker'), quantity=args.get('quantity'), side=args.get('side'),
+                                            type=args.get('type'), time_in_force=args.get('time_in_force'),
+                                            limit_price=args.get('limit_price'), stop_price=args.get('stop_price'),
+                                            extended_hours=args.get('extended_hours')
+                                            , client_order_id=args.get('client_order_id'), order_class=args.get('order_class')
+                                            , take_profit=args.get('take_profit'), stop_loss=args.get('stop_loss'))
+        if raw_response:
+            for order in raw_response:
+                raws.append(order)
+                alpaca_ec.append({
+                    "OrderID": order.get('id'),
+                    "SubmitedAt": order.get('submitted_at'),
+                    "CreatedAt": order.get('created_at'),
+                    "UpdatedAt": order.get('updated_at'),
+                    "FilledAt": order.get('filled_at'),
+                    "Ticker": order.get('symbol'),
+                    "Quantity": order.get('qty'),
+                    "FilledQuantity": order.get('filled_qty'),
+                    "Type": order.get('type'),
+                    "Side": order.get('side'),
+                    "TimeInForce": order.get('time_in_force'),
+                    "LimitPrice": order.get('limit_price'),
+                    "StopPrice": order.get('stop_price'),
+                    "FilledAVGPrice": order.get('filled_avg_price'),
+                    "Status": order.get('status'),
+                    "ExtendedHours": order.get('extended_hours'),
+                    "Legs": order.get('legs')
+                })
+        else:
+            return (f'{CONNECTOR_NAME} - No Orders Found',{},{})
+
+        context_entry = {
+            "Alpaca.Orders(val.OrderID && val.OrderID == obj.OrderID)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def main():
+
+        params = wave.params()
+        api_id = params.get('id')
+        api_secret = params.get('secret')
+        account_url = params['account_url'][:-1] if (params['account_url'] and params['account_url'].endswith('/')) else params['account_url']
+        data_url = params['data_url'][:-1] if (params['data_url'] and params['data_url'].endswith('/')) else params['data_url']
+
+        verify_certificate = not params.get('insecure', False)
+        proxy = params.get('proxy', False)
+
+        wave.debug(f'Command being called is {wave.command()}')
+
+        try:
+            account_client = Client(
+                base_url=account_url,
+                verify=verify_certificate,
+                proxy=proxy,
+                ok_codes=(200, 201, 204),
+                headers={'accept': "application/json"},
+                api_id=api_id,
+                api_secret=api_secret
+            )
+
+            data_client = Client(
+                base_url=data_url,
+                verify=verify_certificate,
+                proxy=proxy,
+                ok_codes=(200, 201, 204),
+                headers={'accept': "application/json"},
+                api_id=api_id,
+                api_secret=api_secret
+            )
+
+            if wave.command() == 'test-connector':
+                result = test_connector(account_client)
+                wave.results(result)
+
+            elif wave.command() == 'alpaca-get-account-information':
+                result = get_account_info(account_client)
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-last-trade':
+                result = get_last_trade(data_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-candlesticks':
+                result = get_candlesticks(data_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-last-quote':
+                result = get_last_quote(data_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-orders':
+                result = get_orders(account_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-submit-order':
+                result = submit_order(account_client,args=wave.args())
+                wave.results(*result)
+
+        except Exception as e:
+            wave.error(str(f'Failed to execute {wave.command()} command. Error: {str(e)}'))
+
+
+    if __name__ in ('__main__', '__builtin__', 'builtins'):
+        main()
+  dockerimage: wave/alpaca:1.0
+  feed: false
+  running: false

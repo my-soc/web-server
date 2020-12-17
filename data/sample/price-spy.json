@@ -1,0 +1,24 @@
+[
+    {
+        "symbol": "SPY",
+        "price": 323.56,
+        "size": 2,
+        "exchange": 2,
+        "cond1": 14,
+        "cond2": 37,
+        "cond3": 41,
+        "cond4": 0,
+        "timestamp": 159612587569800000
+    },
+    {
+        "symbol": "MSFT",
+        "price": 205.04,
+        "size": 100,
+        "exchange": 17,
+        "cond1": 12,
+        "cond2": 0,
+        "cond3": 0,
+        "cond4": 0,
+        "timestamp": 159622640962400000
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "symbol": "MSFT",
+        "askprice": 203.68,
+        "asksize": 1,
+        "askexchange": 17,
+        "bidprice": 203.23,
+        "bidsize": 1,
+        "bidexchange": 17,
+        "timestamp": 1596126156408000000
+    }
+]

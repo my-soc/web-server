@@ -1,0 +1,9 @@
+PyYAML~=5.3.1
+requests~=2.22.0
+urllib3~=1.24.3
+fastapi~=0.59.0
+uvicorn~=0.11.8
+elasticsearch~=7.9.1
+aiofiles
+pydantic~=1.6.1
+python-multipart

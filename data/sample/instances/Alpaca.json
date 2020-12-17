@@ -1,0 +1,22 @@
+[
+      {
+        "name": "Alpaca_1",
+        "url": "https://paper-api.alpaca.markets",
+        "apiID": "PKUUR3QA5GKCX36D02QQ",
+        "apiSecret": "**",
+        "insecure": true,
+        "proxy": false,
+        "enabled": true,
+        "ID": "ALPACA"
+      },
+      {
+        "name": "Alpaca_2",
+        "url": "https://paper-api2.yaho.markets",
+        "apiID": "PKUUR3QA5GKCX36D02QQ",
+        "apiSecret": "**",
+        "insecure": true,
+        "proxy": false,
+        "enabled": false,
+        "ID": "Yahoo"
+      }
+]

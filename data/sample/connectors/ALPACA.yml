@@ -1,0 +1,792 @@
+category: Trading Platforms
+id: ALPACA
+name: IBD
+display: ALPACA Trading Platform
+version: -1
+description: An Integration to Query Stock Information and Place Orders
+image: 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
+parameters:
+- name: url
+  display: URL
+  required: true
+  type: string
+  hidden: false
+- name: apiID
+  display: API ID
+  required: true
+  type: string
+  hidden: false
+- name: apiSecret
+  display: API Secret
+  required: false
+  type: string
+  hidden: false
+- name: insecure
+  display: Validate SSL
+  required: false
+  type: boolean
+  hidden: false
+- name: proxy
+  display: Use Proxy
+  required: false
+  type: boolean
+  hidden: false
+connector:
+  commands:
+  - name: alpaca-get-account-information
+    deprecated: false
+    description: Get Alpaca Account Information
+    execution: false
+    outputs:
+    - contextPath: Alpaca.Account
+      description: Alpaca Acount Information
+      type: String
+  - name: alpaca-get-last-trade
+    arguments:
+    - default: false
+      description: Stock Ticker
+      isArray: false
+      name: ticker
+      required: true
+      secret: false
+    deprecated: false
+    description: Get Stock Last Trade Information
+    execution: false
+    outputs:
+    - contextPath: Alpha.Stock.LastTrade.Ticker
+      description: Stock Last Trade Ticker
+      type: Unknown
+    - contextPath: Alpha.Stock.LastTrade.Price
+      description: Stock Last Trade Price
+      type: Unknown
+    - contextPath: Alpha.Stock.LastTrade.TimeStamp
+      description: Stock Last Trade TimeStamp
+      type: Unknown
+  - name: alpaca-get-candlesticks
+    arguments:
+    - auto: PREDEFINED
+      default: true
+      defaultValue: 1D
+      description: 'Price Timeframes: 1Min, 5Min, 15Min or 1D'
+      isArray: false
+      name: timeframe
+      predefined:
+      - 1Min
+      - 5Min
+      - 15Min
+      - 1D
+      required: true
+      secret: false
+    - default: false
+      description: Stock Ticker
+      isArray: false
+      name: ticker
+      required: true
+      secret: false
+    - default: true
+      defaultValue: '100'
+      description: The maximum number of candlesticks to be returned. It can be between
+        1 and 1000
+      isArray: false
+      name: limit
+      required: false
+      secret: false
+    - default: false
+      description: 'Filter bars equal to or after this time, cannot be used with "after".
+        ex: ''2019-04-15T09:30:00-04:00'''
+      isArray: false
+      name: start
+      required: false
+      secret: false
+    - default: false
+      description: 'Filter bars equal to or before this time, cannot be used with
+        "until". ex: ''2019-04-15T09:30:00-04:00'''
+      isArray: false
+      name: end
+      required: false
+      secret: false
+    - default: false
+      description: 'Filter bars after this time, cannot be used with "start". ex:
+        ''2019-04-15T09:30:00-04:00'''
+      isArray: false
+      name: after
+      predefined:
+      - ''
+      required: false
+      secret: false
+    - default: false
+      description: 'Filter bars before this time, cannot be used with "end". ex: ''2019-04-15T09:30:00-04:00'''
+      isArray: false
+      name: until
+      required: false
+      secret: false
+    deprecated: false
+    description: Get Stock Price Candlestick Information
+    execution: false
+    outputs:
+    - contextPath: Alpha.Stock.CandleSticks.Time
+      description: Price Candle Stick Time
+      type: Unknown
+    - contextPath: Alpha.Stock.CandleSticks.Open
+      description: Price Candle Stick Open
+      type: Unknown
+    - contextPath: Alpha.Stock.CandleSticks.High
+      description: Price Candle Stick High
+      type: Unknown
+    - contextPath: Alpha.Stock.CandleSticks.Low
+      description: Price Candle Stick Low
+      type: Unknown
+    - contextPath: Alpha.Stock.CandleSticks.Close
+      description: Price Candle Stick Close
+      type: Unknown
+    - contextPath: Alpha.Stock.CandleSticks.Volume
+      description: Price Candle Stick Volume
+      type: Unknown
+  - name: alpaca-get-last-quote
+    arguments:
+    - default: false
+      description: Stock Ticker
+      isArray: false
+      name: ticker
+      required: true
+      secret: false
+    deprecated: false
+    description: Get Stock Last Quote
+    execution: false
+    outputs:
+    - contextPath: Alpha.Stock.LastQuote.Ticker
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.AskPrice
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.AskSize
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.AskExchange
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.BidPrice
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.BidSize
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.BideExchange
+      type: Unknown
+    - contextPath: Alpha.Stock.LastQuote.TimeStamp
+      type: Unknown
+  - name: alpaca-get-orders
+    arguments:
+    - auto: PREDEFINED
+      default: false
+      description: Order status to be queried. open, closed or all. Defaults to open.
+      isArray: false
+      name: status
+      predefined:
+      - open
+      - closed
+      - all
+      required: false
+      secret: false
+    - default: false
+      description: The maximum number of orders in response. Defaults to 50 and max
+        is 500.
+      isArray: false
+      name: limit
+      predefined:
+      - ''
+      required: false
+      secret: false
+    - default: false
+      description: The response will include only ones submitted until this timestamp
+        (exclusive.)
+      isArray: false
+      name: until
+      required: false
+      secret: false
+    - default: false
+      description: The response will include only ones submitted after this timestamp
+        (exclusive.)
+      isArray: false
+      name: after
+      required: false
+      secret: false
+    - auto: PREDEFINED
+      default: false
+      description: The chronological order of response based on the submission time.
+        asc or desc. Defaults to desc.
+      isArray: false
+      name: direction
+      predefined:
+      - asc
+      - desc
+      required: false
+      secret: false
+    - auto: PREDEFINED
+      default: false
+      description: If true, the result will roll up multi-leg orders under the legs
+        field of primary order.
+      isArray: false
+      name: nested
+      predefined:
+      - 'true'
+      - 'false'
+      required: false
+      secret: false
+    deprecated: false
+    description: Retrieves a list of orders for the account, filtered by the supplied
+      query parameters.
+    execution: false
+    outputs:
+    - contextPath: Alpaca.Orders.OrderID
+      type: Unknown
+    - contextPath: Alpaca.Orders.SubmitedAt
+      type: Unknown
+    - contextPath: Alpaca.Orders.CreatedAt
+      type: Unknown
+    - contextPath: Alpaca.Orders.UpdatedAt
+      type: Unknown
+    - contextPath: Alpaca.Orders.FilledAt
+      type: Unknown
+    - contextPath: Alpaca.Orders.Ticker
+      type: Unknown
+    - contextPath: Alpaca.Orders.Quantity
+      type: Unknown
+    - contextPath: Alpaca.Orders.FilledQuantity
+      type: Unknown
+    - contextPath: Alpaca.Orders.Type
+      type: Unknown
+    - contextPath: Alpaca.Orders.Side
+      type: Unknown
+    - contextPath: Alpaca.Orders.TimeInForce
+      type: Unknown
+    - contextPath: Alpaca.Orders.LimitPrice
+      type: Unknown
+    - contextPath: Alpaca.Orders.StopPrice
+      type: Unknown
+    - contextPath: Alpaca.Orders.FilledAVGPrice
+      type: Unknown
+    - contextPath: Alpaca.Orders.Status
+      type: Unknown
+    - contextPath: Alpaca.Orders.ExtendedHours
+      type: Unknown
+    - contextPath: Alpaca.Orders.Legs
+      type: Unknown
+  - name: alpaca-submit-order
+    arguments:
+    - default: false
+      description: symbol or asset ID to identify the asset to trade
+      isArray: false
+      name: ticker
+      required: true
+      secret: false
+    - default: false
+      description: number of shares to trade
+      isArray: false
+      name: quantity
+      required: true
+      secret: false
+    - auto: PREDEFINED
+      default: false
+      description: Sell or Buy
+      isArray: false
+      name: side
+      predefined:
+      - buy
+      - sell
+      required: true
+      secret: false
+    - auto: PREDEFINED
+      default: true
+      defaultValue: market
+      description: market, limit, stop, or stop_limit
+      isArray: false
+      name: type
+      predefined:
+      - market
+      - limit
+      - stop
+      - stop_limit
+      required: true
+      secret: false
+    - auto: PREDEFINED
+      default: true
+      defaultValue: day
+      description: Day , Good to Cancel orders
+      isArray: false
+      name: time_in_force
+      predefined:
+      - day
+      - gtc
+      - opg
+      - cls
+      - ioc
+      - fok
+      required: true
+      secret: false
+    - default: false
+      description: Required if type is limit or stop_limit
+      isArray: false
+      name: limit_price
+      required: false
+      secret: false
+    - default: false
+      description: Required if type is stop or stop_limit
+      isArray: false
+      name: stop_price
+      required: false
+      secret: false
+    - default: false
+      description: (default) false. If true, order will be eligible to execute in
+        premarket/afterhours. Only works with type limit and time_in_force day.
+      isArray: false
+      name: extended_hours
+      required: false
+      secret: false
+    - default: false
+      description: A unique identifier for the order. Automatically generated if not
+        sent.
+      isArray: false
+      name: client_order_id
+      required: false
+      secret: false
+    - auto: PREDEFINED
+      default: true
+      defaultValue: simple
+      description: simple, bracket, oco or oto
+      isArray: false
+      name: order_class
+      predefined:
+      - simple
+      - bracket
+      - oco
+      - oto
+      required: false
+      secret: false
+    - default: false
+      description: limit_price parameter is required for take-profit leg of advanced
+        orders
+      isArray: false
+      name: take_profit
+      required: false
+      secret: false
+    - default: false
+      description: stop_price and limit_price parameters for stop-loss leg of advanced
+        orders
+      isArray: false
+      name: stop_loss
+      required: false
+      secret: false
+    deprecated: false
+    description: Places a new order for the given account. An order request may be
+      rejected if the account is not authorized for trading, or if the tradable balance
+      is insufficient to fill the order.
+    execution: false
+  code: |-
+    import urllib3
+
+    from lib.common import BaseClient
+    import lib.mock as wave
+
+
+    # Disable insecure warnings
+    urllib3.disable_warnings()
+
+
+    ''' CONSTANTS '''
+
+
+    CONNECTOR_NAME = 'Alpaca'
+
+
+    '''
+    Classes
+    '''
+
+
+    class Client(BaseClient):
+
+        def __init__(self, api_id: str, api_secret: str, base_url: str, verify=False, proxy=False,
+                     ok_codes=(200, 201, 204), headers=None, auth=None):
+            super(Client, self).__init__(base_url, verify, proxy, ok_codes, headers, auth)
+            self.api_id = api_id
+            self.api_secret = api_secret
+            self.headers = {
+                "APCA-API-KEY-ID": api_id,
+                "APCA-API-SECRET-KEY": api_id
+            }
+
+
+        def get_clock(self):
+            wave.info('Getting Clock Value')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/clock',
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_account_information(self):
+            wave.info('Getting Account Information')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/account',
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_last_trade(self,ticker):
+            wave.info('Getting Last Trade Information')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v1/last/stocks/'+ticker,
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_candlesticks(self, ticker, timeframe="1D", limit="100", start=None, end=None, after=None, until=None):
+            wave.info('Getting Price Candlesticks')
+            params = {
+                "symbols": ticker,
+                "limit": limit
+            }
+            if start is not None and after is not None:
+                wave.error("Start and After filters cannot be used in one query")
+            if until is not None and end is not None:
+                wave.error("Until and End filters cannot be used in one query")
+
+            if start is not None:
+                params['start'] = start
+            if end is not None:
+                params['end'] = end
+            if after is not None:
+                params['after'] = after
+            if until is not None:
+                params['until'] = until
+
+            res = self._http_request(
+                "GET",
+                url_suffix=f'/v1/bars/{timeframe}',
+                resp_type="json",
+                headers=self.headers,
+                params=params
+            )
+            return res
+
+        def get_last_quote(self, ticker):
+            wave.info('Getting Last Quote Information')
+            res = self._http_request(
+                "GET",
+                url_suffix='/v1/last_quote/stocks/'+ticker,
+                resp_type="json",
+                headers=self.headers
+            )
+            return res
+
+        def get_orders(self, status=None, limit=None, until=None, after=None, direction=None, nested=None):
+            wave.info('Getting Orders Information')
+            params = {}
+
+            if status is not None:
+                params['status'] = status
+            if limit is not None:
+                params['limit'] = limit
+            if until is not None:
+                params['until'] = until
+            if after is not None:
+                params['after'] = after
+            if direction is not None:
+                params['direction'] = direction
+            if nested is not None:
+                params['nested'] = nested
+
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/orders',
+                resp_type="json",
+                headers=self.headers,
+                params=params
+            )
+            return res
+
+        def submit_order(self, status=None, limit=None, until=None, after=None, direction=None, nested=None):
+            wave.info('Getting Orders Information')
+            params = {}
+
+            if status is not None:
+                params['status'] = status
+            if limit is not None:
+                params['limit'] = limit
+            if until is not None:
+                params['until'] = until
+            if after is not None:
+                params['after'] = after
+            if direction is not None:
+                params['direction'] = direction
+            if nested is not None:
+                params['nested'] = nested
+
+            res = self._http_request(
+                "GET",
+                url_suffix='/v2/orders',
+                resp_type="json",
+                headers=self.headers,
+                params=params
+            )
+            return res
+
+
+    '''
+    Commands
+    '''
+
+
+    def test_connector(client):
+        res = client.get_clock()
+        if res['is_open'] == 'true' or 'false':
+            return 'ok'
+        else:
+            return 'Failed to connect to the API'
+
+
+    def get_account_info(client):
+        raw_response = client.get_account_information()
+
+        if raw_response:
+            raws = alpaca_ec = raw_response
+        else:
+            return f'{CONNECTOR_NAME} - Could not find any Accounts'
+
+        context_entry = {
+            "Alpaca.Account": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_last_trade(client, args):
+        raw_response = client.get_last_trade(args['ticker'])
+        if raw_response:
+            raws = raw_response
+            alpaca_ec ={
+                "Ticker": raw_response['symbol'],
+                "Price": raw_response['last']['price'],
+                "Size": raw_response['last']['size'],
+                "Exchange": raw_response['last']['exchange'],
+                "TimeStamp": raw_response['last']['timestamp']
+            }
+        else:
+            return f'{CONNECTOR_NAME} - Could not Get The Last Trade Information'
+
+        context_entry = {
+            "Alpaca.Stock.LastTrade(val.Ticker && val.Ticker == obj.Ticker)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_candlesticks(client, args):
+        raws=[]
+        alpaca_ec=[]
+        title = f'{CONNECTOR_NAME} - Price Candlesticks'
+        raw_response = client.get_candlesticks(timeframe=args.get('timeframe'), ticker=args.get('ticker'), limit=args.get('limit'),
+                                               start=args.get('start'), end=args.get('end'), after=args.get('after'),
+                                               until=args.get('until'))
+        if raw_response:
+            for candle in raw_response[args.get('ticker')]:
+                raws.append(candle)
+                alpaca_ec.append({
+                    "Time": candle['t'],
+                    "Open": candle['o'],
+                    "High": candle['h'],
+                    "Low": candle['l'],
+                    "Close": candle['c'],
+                    "Volume": candle['v']
+                })
+        else:
+            return f'{CONNECTOR_NAME} - Could not Get The CandleSticks'
+
+        context_entry = {
+            "Alpaca.Stock.CandleSticks": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_last_quote(client, args):
+        raw_response = client.get_last_quote(args['ticker'])
+        if raw_response:
+            raws = raw_response
+            alpaca_ec ={
+                "Ticker": raw_response['symbol'],
+                "AskPrice": raw_response['last']['askprice'],
+                "AskSize": raw_response['last']['asksize'],
+                "AskExchange": raw_response['last']['askexchange'],
+                "BidPrice": raw_response['last']['bidprice'],
+                "BidSize": raw_response['last']['bidsize'],
+                "BidExchange": raw_response['last']['bidexchange'],
+                "TimeStamp": raw_response['last']['timestamp']
+            }
+        else:
+            return f'{CONNECTOR_NAME} - Could not Get The Last Quote Information'
+
+        context_entry = {
+            "Alpaca.Stock.LastQuote(val.Ticker && val.Ticker == obj.Ticker)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def get_orders(client, args):
+        raws=[]
+        alpaca_ec=[]
+        raw_response = client.get_orders(status=args.get('status'), limit=args.get('limit'), until=args.get('until'),
+                                         after=args.get('after'), direction=args.get('direction'), nested=args.get('nested'))
+        if raw_response:
+            for order in raw_response:
+                raws.append(order)
+                alpaca_ec.append({
+                    "OrderID": order.get('id'),
+                    "SubmitedAt": order.get('submitted_at'),
+                    "CreatedAt": order.get('created_at'),
+                    "UpdatedAt": order.get('updated_at'),
+                    "FilledAt": order.get('filled_at'),
+                    "Ticker": order.get('symbol'),
+                    "Quantity": order.get('qty'),
+                    "FilledQuantity": order.get('filled_qty'),
+                    "Type": order.get('type'),
+                    "Side": order.get('side'),
+                    "TimeInForce": order.get('time_in_force'),
+                    "LimitPrice": order.get('limit_price'),
+                    "StopPrice": order.get('stop_price'),
+                    "FilledAVGPrice": order.get('filled_avg_price'),
+                    "Status": order.get('status'),
+                    "ExtendedHours": order.get('extended_hours'),
+                    "Legs": order.get('legs')
+                })
+        else:
+            return (f'{CONNECTOR_NAME} - No Orders Found',{},{})
+
+        context_entry = {
+            "Alpaca.Orders(val.OrderID && val.OrderID == obj.OrderID)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def submit_order(client, args):
+        raws=[]
+        alpaca_ec=[]
+        raw_response = client.submit_order(ticker=args.get('ticker'), quantity=args.get('quantity'), side=args.get('side'),
+                                            type=args.get('type'), time_in_force=args.get('time_in_force'),
+                                            limit_price=args.get('limit_price'), stop_price=args.get('stop_price'),
+                                            extended_hours=args.get('extended_hours')
+                                            , client_order_id=args.get('client_order_id'), order_class=args.get('order_class')
+                                            , take_profit=args.get('take_profit'), stop_loss=args.get('stop_loss'))
+        if raw_response:
+            for order in raw_response:
+                raws.append(order)
+                alpaca_ec.append({
+                    "OrderID": order.get('id'),
+                    "SubmitedAt": order.get('submitted_at'),
+                    "CreatedAt": order.get('created_at'),
+                    "UpdatedAt": order.get('updated_at'),
+                    "FilledAt": order.get('filled_at'),
+                    "Ticker": order.get('symbol'),
+                    "Quantity": order.get('qty'),
+                    "FilledQuantity": order.get('filled_qty'),
+                    "Type": order.get('type'),
+                    "Side": order.get('side'),
+                    "TimeInForce": order.get('time_in_force'),
+                    "LimitPrice": order.get('limit_price'),
+                    "StopPrice": order.get('stop_price'),
+                    "FilledAVGPrice": order.get('filled_avg_price'),
+                    "Status": order.get('status'),
+                    "ExtendedHours": order.get('extended_hours'),
+                    "Legs": order.get('legs')
+                })
+        else:
+            return (f'{CONNECTOR_NAME} - No Orders Found',{},{})
+
+        context_entry = {
+            "Alpaca.Orders(val.OrderID && val.OrderID == obj.OrderID)": alpaca_ec
+        }
+
+        human_readable = context_entry
+        return [human_readable, context_entry, raws]
+
+
+    def main():
+
+        params = wave.params()
+        api_id = params.get('id')
+        api_secret = params.get('secret')
+        account_url = params['account_url'][:-1] if (params['account_url'] and params['account_url'].endswith('/')) else params['account_url']
+        data_url = params['data_url'][:-1] if (params['data_url'] and params['data_url'].endswith('/')) else params['data_url']
+
+        verify_certificate = not params.get('insecure', False)
+        proxy = params.get('proxy', False)
+
+        wave.debug(f'Command being called is {wave.command()}')
+
+        try:
+            account_client = Client(
+                base_url=account_url,
+                verify=verify_certificate,
+                proxy=proxy,
+                ok_codes=(200, 201, 204),
+                headers={'accept': "application/json"},
+                api_id=api_id,
+                api_secret=api_secret
+            )
+
+            data_client = Client(
+                base_url=data_url,
+                verify=verify_certificate,
+                proxy=proxy,
+                ok_codes=(200, 201, 204),
+                headers={'accept': "application/json"},
+                api_id=api_id,
+                api_secret=api_secret
+            )
+
+            if wave.command() == 'test-connector':
+                result = test_connector(account_client)
+                wave.results(result)
+
+            elif wave.command() == 'alpaca-get-account-information':
+                result = get_account_info(account_client)
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-last-trade':
+                result = get_last_trade(data_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-candlesticks':
+                result = get_candlesticks(data_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-last-quote':
+                result = get_last_quote(data_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-get-orders':
+                result = get_orders(account_client, wave.args())
+                wave.results(*result)
+
+            elif wave.command() == 'alpaca-submit-order':
+                result = submit_order(account_client,args=wave.args())
+                wave.results(*result)
+
+        except Exception as e:
+            wave.error(str(f'Failed to execute {wave.command()} command. Error: {str(e)}'))
+
+
+    if __name__ in ('__main__', '__builtin__', 'builtins'):
+        main()
+  dockerimage: wave/alpaca:1.0
+  feed: false
+  running: false
